@@ -1,0 +1,32 @@
+<!--<tr>-->
+  <!--<td>{{order.id}}</td>-->
+  <!--<td>{{order.address}}</td>-->
+  <!--<td>{{order.tel}}</td>-->
+  <!--<td>{{order.name}}</td>-->
+  <!--<td>{{order.courier}}</td>-->
+  <!--<td>{{order.time}}</td>-->
+<!--</tr>-->
+<div class="details">
+  <h2>Детали заказа: {{order.address | uppercase}}</h2>
+  <p class="time">Время: {{order.time}}</p>
+  <p class="phone">Телефон: {{order.tel}}</p>
+  <p class="name">Имя: {{order.name}}</p>
+  <p class="courier">Курьер: {{order.courier}}</p>
+</div>
+<div class="change">
+  <label>Адрес:
+    <input [(ngModel)]="order.address" placeholder="Адрес">
+  </label>
+  <label>Время:
+    <input [(ngModel)]="order.time" placeholder="Время">
+  </label>
+  <label>Телефон:
+    <input [(ngModel)]="order.tel" placeholder="Телефон">
+  </label>
+  <label>Имя:
+    <input [(ngModel)]="order.name" placeholder="Имя">
+  </label>
+  <label>Курьер:
+    <input [(ngModel)]="order.courier" placeholder="Курьер">
+  </label>
+</div>
