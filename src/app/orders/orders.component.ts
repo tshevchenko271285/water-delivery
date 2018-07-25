@@ -20,7 +20,8 @@ export class OrdersComponent implements OnInit {
   }
 
   getOrders(): void {
-    this.orders = this.OrderService.getOrders();
+    this.OrderService.getOrders()
+      .subscribe( OREDRS => this.orders = ORDERS );
   }
 
   constructor( private OrderService: OrderService ) { }
