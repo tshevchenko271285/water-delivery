@@ -5,11 +5,13 @@ import { FormsModule } from '@angular/forms'
 
 import { AppComponent } from './app.component';
 import { OrderComponent } from './order/order.component';
+import { OrdersComponent } from './orders/orders.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    OrderComponent
+    OrderComponent,
+    OrdersComponent
   ],
   imports: [
     BrowserModule,

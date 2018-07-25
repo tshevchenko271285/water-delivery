@@ -3,6 +3,8 @@ export class Order {
     address: string;
     tel: number;
     name: string;
+    water: string;
+    waterCount: number;
     courier: string;
     time: any;
 }

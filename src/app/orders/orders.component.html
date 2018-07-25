@@ -1,0 +1,15 @@
+<div class="window-orders">
+  <ul class="orders">
+    <li
+        *ngFor="let order of orders"
+        (click)="onSelect(order)"
+        [class.selected_item]="order === selectedOrder"
+        class="order_item">
+      <span class="order_id">{{ order.id }}</span>
+      <span class="order_address">{{ order.address }}</span>
+      <span class="order_time">{{ order.time }}</span>
+      <span class="order_phone">{{ order.tel }}</span>
+    </li>
+  </ul>
+  <app-order [order]="selectedOrder" class="details"></app-order>
+</div>

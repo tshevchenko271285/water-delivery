@@ -1,0 +1,34 @@
+.window-orders {
+    display: flex;
+}
+.orders {
+    width: 50%;
+    padding: 15px;
+}
+.details {
+    width: 50%;
+}
+.order_item {
+    display: flex;
+    width: 100%;
+    padding: 5px 0;
+}
+.order_item:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
+.selected_item {
+    background-color: #d9d9d9;
+}
+.order_id {
+    width: 10%;
+}
+.order_address {
+    width: 40%;
+}
+.order_time {
+    width: 20%;
+}
+.order_phone {
+    width: 30%;
+}

@@ -1,7 +1,42 @@
-tr {
-    border: 1px solid #cccccc;
+.order {
+    display: flex;
+    border: 1px solid #ccc;
 }
-td {
-    padding: 5px 10px;
-    border-bottom: 1px solid #cccccc;
+.details {
+    width: 60%;
+    padding: 15px;
+}
+.details > p {
+    margin: 0;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+}
+.details_title {
+
+}
+.change {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15px;
+}
+.change > label {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+span.change_title {
+    display: block;
+    width: 35%;
+    margin-right: 10%;
+    text-align: left;
+    overflow: hidden;
+}
+.change > label > input {
+    display: block;
+    width: 55%;
 }

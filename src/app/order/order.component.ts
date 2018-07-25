@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Order } from '../order';
+// import { Orders } from '../mock-orders';
 
 @Component({
   selector: 'app-order',
@@ -8,14 +9,7 @@ import { Order } from '../order';
 })
 export class OrderComponent implements OnInit {
 
-  order: Order = {
-    id: 1,
-    address: 'пр. Ленина 1',
-    tel: 123456,
-    name: 'John',
-    courier: 'Вася',
-    time: '8:00'
-  };
+  @Input() order: Order;
 
   constructor() { }
 
